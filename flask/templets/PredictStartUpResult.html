@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST" action="{{ url_for('PredictStartUpFuture') }}">
+        <input type="hidden" id="prediction_text" name="prediction_text">
+        <input type="submit" value="Predict">
+      </form>
+      <h1>Prediction Result</h1>
+      <!--{% if prediction_text %}
+        <script>
+          window.location.href = "{{ url_for('PredictStartUpResult', prediction_text=prediction_text) }}"
+        </script>
+      {% endif %}-->
+      <p>Kickstart is failed..</p>
+
+</body>
+</html>
